@@ -11,7 +11,10 @@ function double_to_one(collection) {
 			arr.push(collection[i]);
 		}
 	}
-	
+	arr = arr.toString().split(',');
+	for(i=0; i<arr.length; i++){
+		arr[i] = parseInt(arr[i]);
+	}
 	return arr;
 }
 

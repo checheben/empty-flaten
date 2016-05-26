@@ -1,5 +1,4 @@
 'use strict';
-
 function double_to_one(collection) {
 	var arr = [];
 	var returnArr = [];
@@ -14,11 +13,10 @@ function double_to_one(collection) {
 	}
 	arr = arr.toString().split(',');
 	for(i=0; i<arr.length; i++){
-		if(returnArr.indexOf(arr[i]) == -1){
-			returnArr.push(arr[i]);
+		if(returnArr.indexOf(parseInt(arr[i])) == -1){
+			returnArr.push(parseInt(arr[i]));
 		}
 	}
 	return returnArr;
 }
-
 module.exports = double_to_one;
